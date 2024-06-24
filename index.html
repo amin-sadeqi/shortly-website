@@ -3,16 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/favicon-32x32.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
     />
     <link href="css/output.css" rel="stylesheet" />
     <title>shortly</title>
   </head>
   <body>
-    <h2 class="font-bold text-2xl text-blue-500">hello shortly</h2>
+    <!-- Navbar -->
+    <nav class="container mx-auto relative p-6 lg:px-0">
+      <!-- container for all items -->
+      <div class="flex justify-between items-center">
+        <!-- container logo &  menu -->
+        <div class="flex items-center space-x-20">
+          <img src="images/logo.svg" alt="logo" />
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="#" class="text-grayishViolet hover:text-darkViolet"
+              >Features</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-darkViolet"
+              >Pricing</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-darkViolet"
+              >Resources</a
+            >
+          </div>
+        </div>
+        <!-- button container -->
+        <div class="hidden items-center space-x-6 font-bold lg:flex">
+          <a href="#" class="text-grayishViolet hover:text-darkViolet">Login</a>
+          <button
+            class="text-white bg-cyan p-3 px-6 rounded-full hover:bg-cyanLight"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <section
+      class="flex flex-col-reverse items-center px-8 container mx-auto mt-10 lg:px-0 lg:flex-row"
+    >
+      <div class="flex flex-col space-y-10 lg:w-1/2">
+        <h2
+          class="text-5xl text-black text-center font-bold lg:text-left lg:text-6xl"
+        >
+          More than just shorter links
+        </h2>
+        <p
+          class="text-grayishViolet text-center text-2xl mt-10 lg:text-left lg:max-w-md"
+        >
+          Build your brand's recognition and get detailed insights on how your
+          links are performing.
+        </p>
+        <div class="mx-auto lg:mx-0">
+          <a
+            href="#"
+            class="text-white bg-cyan py-5 px-10 rounded-full text-2xl font-bold lg:py-4 hover:bg-cyanLight"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+      <div class="mx-auto mb-24 md:w-180 lg:mb-0 lg:w-1/2">
+        <img src="images/illustration-working.svg" alt="Hero-Image" />
+      </div>
+    </section>
   </body>
 </html>
